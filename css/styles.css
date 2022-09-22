@@ -1,6 +1,17 @@
 :root {
     --main-font: 'Roboto', sans-serif;
-    
+    --accent-color: #2196F3;
+    --main-color: #212121;
+    --second-color: #757575;
+    --background-color: #2F303A;
+    --modal-btn-accent-color: #188CE8;
+    --hero-color: #FFFFFF;
+    --logo-header: #000000;
+    --logo-footer: #FFFFFF;
+    --address-footer-color: #FFFFFF;
+    --contact-footer-color: rgba(255, 255, 255, 0.6);
+    --filter-button-back: #F5F4FA;
+    --filter-button-active: #FFFFFF;
 }
 
 .list {
@@ -12,9 +23,13 @@
     color: inherit;
 }
 
+.button {
+    color: inherit;
+    font-family: inherit;
+}
 body {
     font-family: var(--main-font);
-    color: #212121;
+    color: var(--main-color);
 }
 
 
@@ -42,47 +57,55 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 
 .logo:hover,
 .logo:focus {
-    color: #2196F3
+    color: var(--accent-color);
 }
 
 .logo-span-header {
-    color: #000000;
+    color: var(--logo-header);
 }
 
 .logo-span-header:hover,
 .logo-span-header:focus {
-    color: #2196F3
+    color: var(--accent-color);
 }
 
-.menu-link {
+
+
+.menu-nav-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: #2196F3;
+.menu-nav-link.current {
+    color: var(--accent-color);
 }
+
+.menu-nav-link:hover,
+.menu-nav-link:focus {
+    color: var(--accent-color);
+}
+ 
+
 
 .menu-contact-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--second-color);
 }
 
 .menu-contact-link:hover,
 .menu-contact-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* ================= /HEADER ================= */
@@ -97,8 +120,8 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
-    background: #2F303A;
+    color: var(--hero-color);
+    background: var(--background-color);
 }
 
 
@@ -110,8 +133,8 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background: #2196F3;
+    color: var(--hero-color);
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
@@ -119,7 +142,7 @@ body {
 
 .modal-btn:hover,
 .modal-btn:focus {
-    background: #188CE8;
+    background: var(--modal-btn-accent-color);
 }
 
 /* ================= /HERO ================= */
@@ -140,7 +163,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-color);
 }
 
 /* ================= /FEATURES ================= */
@@ -172,7 +195,7 @@ body {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-color);
 }
 /* ================= /TEAM ================= */
 
@@ -181,38 +204,41 @@ body {
 /* ================= FOOTER ================= */
 
 .logo-span-footer {
-    color: #FFFFFF;
+    color: var(--logo-footer);
 }
 
 .logo-span-footer:hover,
 .logo-span-footer:focus {
-    color: #2196F3
+    color: var(--accent-color);
 }
 
 .footer {
-    background: #2F303A;
+    background: var(--background-color);
 }
 .contact-info-item-address {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--address-footer-color);
 }
 
 .contact-info-item-address:hover,
 .contact-info-item-address:focus {
-    color: #2196F3
+    color: var(--accent-color);
 }
 
 .contact-info-item {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--contact-footer-color);
 }
 .contact-info-item:hover,
 .contact-info-item:focus {
-    color: #2196F3
+    color: var(--accent-color);
+}
+.address {
+    font-style: normal;
 }
 /* ================= /FOOTER ================= */
 
@@ -226,14 +252,13 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    background: #F5F4FA;
+    background: var(--filter-button-back);
     border-radius: 4px;
-
 }
 .filter-button:hover,
 .filter-button:focus {
-    color: #FFFFFF;
-    background: #2196F3;
+    color: var(--filter-button-active);
+    background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
@@ -250,7 +275,7 @@ body {
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-color);
 }
 
 /* ================= /PORTFOLIO ================= */
