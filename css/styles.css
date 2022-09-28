@@ -5,14 +5,15 @@
     --second-color: #757575;
     --background-color: #2F303A;
     --modal-btn-accent-color: #188CE8;
-    --hero-color: #FFFFFF;
     --logo-header: #000000;
-    --logo-footer: #FFFFFF;
-    --address-footer-color: #FFFFFF;
     --contact-footer-color: rgba(255, 255, 255, 0.6);
-    --filter-button-back: #F5F4FA;
-    --filter-button-active: #FFFFFF;
+    --filter-button-bg: #F5F4FA;
+    --main-light-color: #FFFFFF;
 }
+
+
+
+
 
 .list {
     list-style: none;
@@ -120,7 +121,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--hero-color);
+    color: var(--main-light-color);
     background: var(--background-color);
 }
 
@@ -133,7 +134,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--hero-color);
+    color: var(--main-light-color);
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -204,7 +205,7 @@ body {
 /* ================= FOOTER ================= */
 
 .logo-span-footer {
-    color: var(--logo-footer);
+    color: var(--main-light-color);
 }
 
 .logo:hover .logo-span-footer,
@@ -219,7 +220,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--address-footer-color);
+    color: var(--main-light-color);
 }
 
 .contact-info-item-address:hover,
@@ -252,12 +253,12 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    background: var(--filter-button-back);
+    background: var(--filter-button-bg);
     border-radius: 4px;
 }
 .filter-button:hover,
 .filter-button:focus {
-    color: var(--filter-button-active);
+    color: var(--main-light-color);
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
